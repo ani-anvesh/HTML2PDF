@@ -1,0 +1,669 @@
+$redColor: #c7222a;
+$purpleColor: #902065;
+
+@font-face {
+  font-family: PFHandbookProBlack;
+  src: url("../assets/fonts/pf-handbook-pro-cufonfonts-webfont/PFHandbookProBlack.woff");
+}
+@font-face {
+  font-family: PFHandbookProRegular;
+  src: url("../assets/fonts/pf-handbook-pro-cufonfonts-webfont/PFHandbookProRegular.woff");
+}
+@font-face {
+  font-family: PFHandbookProBold;
+  src: url("../assets/fonts/pf-handbook-pro-cufonfonts-webfont/PFHandbookProBold.woff");
+}
+@font-face {
+  font-family: PFHandbookProExtraThin;
+  src: url("../assets/fonts/pf-handbook-pro-cufonfonts-webfont/PFHandbookProExtraThin.woff");
+}
+@font-face {
+  font-family: PFHandbookProThin;
+  src: url("../assets/fonts/pf-handbook-pro-cufonfonts-webfont/PFHandbookProThin.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /*  */
+}
+.pdf {
+  height: 90vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.flex-rr {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-c {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-cn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-u {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.flex-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.flex-s {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  min-width: 1034px;
+}
+.dottedLine {
+  width: 395px;
+  height: 0px;
+  border: 1px dashed #bcbcbc;
+  opacity: 1;
+}
+header {
+  background: $redColor 0% 0% no-repeat padding-box;
+  opacity: 1;
+  img {
+    margin: 22px 51px;
+    width: 193.91px;
+    height: 45px;
+  }
+}
+.select {
+  width: 100%;
+  background: $purpleColor 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  img {
+    margin: 13px 50px;
+    width: 185px;
+    height: 18px;
+  }
+}
+.name {
+  h2 {
+    margin: 18px 51px;
+    font: normal normal normal 21px/29px PFHandbookProRegular;
+    letter-spacing: 0px;
+    color: #6c7174;
+    span {
+      font: normal normal bold 21px/29px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px 51px;
+  grid-gap: 28px;
+  .box {
+    width: 449px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px dashed #cdcece;
+    border-radius: 4px;
+    opacity: 1;
+    .line1 {
+      width: 449px;
+      height: 62px;
+      background: $purpleColor 0% 0% no-repeat padding-box;
+      border-radius: 4px 4px 0px 0px;
+      opacity: 1;
+      h1 {
+        font: normal normal bold 26px/30px PFHandbookProBold;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+        opacity: 1;
+        margin: 17px 26px;
+      }
+      h2 {
+        text-align: left;
+        font: normal normal normal 30px/30px PFHandbookPRoRegular;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        margin: 17px 26px;
+      }
+    }
+    .line2 {
+      width: 100%;
+      background: #f1f3f6 0% 0% no-repeat padding-box;
+      opacity: 1;
+
+      h1 {
+        text-align: left;
+        font: normal normal bold 26px/30px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #6c7174;
+        opacity: 1;
+        margin: 20px 26px;
+      }
+      div {
+        margin: 6px 26px;
+        img {
+          margin: 0px 3px;
+          width: 54px;
+          height: 63px;
+        }
+      }
+    }
+    .line3 {
+      width: 100%;
+      background: rgb(241, 243, 246, 0.34) 0% 0% no-repeat padding-box;
+      h1 {
+        margin: 9px 24px -2px 24px;
+        text-align: left;
+        font: normal normal normal 18px/30px PFHandbookProRegular;
+        letter-spacing: 0px;
+        color: #6c7174;
+        opacity: 1;
+      }
+      h2 {
+        margin: -2px 24px 9px 24px;
+        text-align: left;
+        font: normal normal bold 20px/30px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #902065;
+        opacity: 1;
+      }
+    }
+    .line4 {
+      width: 100%;
+      h1 {
+        margin: 15px 35px -2px 24px;
+        text-align: left;
+        font: normal normal normal 18px/30px PFHandbookProRegular;
+        letter-spacing: 0px;
+        color: #6c7174;
+        opacity: 1;
+      }
+      h2 {
+        margin: -2px 35px 15px 24px;
+        text-align: left;
+        font: normal normal bold 20px/30px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #060606;
+        opacity: 1;
+      }
+    }
+    .line5 {
+      width: 100%;
+      div {
+        margin: -5px 35px 15px 35px;
+        h2 {
+          margin: 0;
+          text-align: left;
+          font: normal normal normal 17px/21px PFHandbookProRegular;
+          letter-spacing: 0px;
+          color: #06060678;
+          span {
+            text-align: left;
+            font: normal normal normal 15px/21px PFHandbookProRegular;
+            letter-spacing: 0px;
+            color: #060606;
+          }
+        }
+      }
+    }
+    .line6 {
+      div {
+        width: 100%;
+        margin: 24px 22px -16px 22px;
+        img {
+          width: 18px;
+          height: 18px;
+          margin: 5px 7px 0px 0px;
+          z-index: 999;
+        }
+        h1 {
+          margin: 0;
+          text-align: left;
+          font: normal normal normal 15px/30px PFHandbookProRegular;
+          letter-spacing: 0px;
+          color: #060606;
+          opacity: 1;
+          z-index: 999;
+        }
+      }
+    }
+    .line7 {
+      width: 100%;
+      height: 100%;
+      h1 {
+        margin: 45px 0px 0px 24px;
+        text-align: left;
+        font: normal normal bold 17px/30px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+      }
+      div {
+        div {
+          img {
+            margin: 7px 8.33px 28.54px 24px;
+            width: 18px;
+            height: 15px;
+          }
+          h1 {
+            margin: 0;
+            text-align: left;
+            font: normal normal bold 15px/30px PFHandbookProBold;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.tabber {
+  width: 100%;
+  margin-top: 46px;
+  position: relative;
+  .line {
+    position: absolute;
+    margin-top: 7vh;
+    margin-left: 20vw;
+    height: 0px;
+    border: 1px solid #707070;
+    opacity: 0.2;
+    width: 45vw;
+    background-color: black;
+  }
+  .tab {
+    width: 930px;
+    height: 50px;
+    background: #f1f3f6 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    h1 {
+      margin: 10px 20px;
+      text-align: left;
+      font: normal normal bold 19px/30px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #902065;
+      opacity: 1;
+    }
+  }
+}
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 73px;
+  div {
+    position: relative;
+    margin: 36px 0px 51px 0px;
+    width: 125px;
+    height: 184px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #fff;
+    border: 1px dashed #cdcece;
+    border-radius: 3px;
+    opacity: 1;
+    img {
+      position: absolute;
+      margin-top: -29vh;
+      width: 35px;
+      height: 35px;
+    }
+    h1 {
+      position: absolute;
+      margin-top: -20vh;
+      text-align: left;
+      font: normal normal bold 17px/30px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #881e5f;
+      opacity: 1;
+    }
+    h2 {
+      position: absolute;
+      margin-top: -4vh;
+      width: 64px;
+      text-align: center;
+      font: normal normal normal 17px/16px PFHandbookProRegular;
+      letter-spacing: 0px;
+      color: #040404c4;
+      opacity: 1;
+    }
+    .h2 {
+      margin-top: -6vh;
+      width: 100%;
+    }
+    h3 {
+      margin-top: 8vh;
+      text-align: center;
+      font: normal normal normal 17px/23px PFHandbookProRegular;
+      letter-spacing: 0px;
+      color: #040404c4;
+      opacity: 1;
+    }
+
+    h4 {
+      margin-top: 10vh;
+      text-align: center;
+      font: normal normal bold 17px/23px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #040404c4;
+      opacity: 1;
+    }
+    h5 {
+      width: 106px;
+      text-align: center;
+      font: normal normal normal 14px/14px PFHandbookProRegular;
+      letter-spacing: 0px;
+      color: #6c7174c4;
+      margin-top: 16px;
+    }
+    h6 {
+      text-align: center;
+      font: normal normal 900 14px/14px PF HandbookProBold;
+      letter-spacing: 0px;
+      color: #040404c4;
+    }
+  }
+}
+.two {
+  margin-top: 20px;
+  .box1 {
+    width: 448px;
+    box-shadow: 0px 3px 6px #fff;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px dashed #cdcece;
+    border-radius: 4px;
+    opacity: 1;
+    .line11 {
+      height: 45px;
+      background: #d4ae69 0% 0% no-repeat padding-box;
+      border-radius: 4px 4px 0px 0px;
+      opacity: 1;
+      h1 {
+        margin-left: 23px;
+        text-align: left;
+        font: normal normal bold 19px/30px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
+      div {
+        margin-right: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86px;
+        height: 30px;
+        background: #695934 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        opacity: 1;
+        .img {
+          background: #fff url("../assets//images/images-removebg-preview.png")
+            0% 0% no-repeat padding-box;
+          opacity: 1;
+          width: 17px;
+          height: 16px;
+        }
+        h1 {
+          margin: 0;
+          text-align: left;
+          font: normal normal normal 16px/30px PFHandbookProRegular;
+          letter-spacing: 0px;
+          color: #ffffff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .grids {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 85px;
+    padding: 34px 34px 39px 25px;
+    .gg {
+      grid-gap: 21px;
+    }
+    .cols1 {
+      width: 100%;
+      h1 {
+        text-align: left;
+        font: normal normal normal 16px/28px PFHandbookProRegular;
+        letter-spacing: 0px;
+        color: #5e5e5e;
+        opacity: 1;
+      }
+      h2 {
+        text-align: left;
+        font: normal normal bold 14px/28px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+      }
+    }
+    .cols2 {
+      width: 100%;
+      h1 {
+        text-align: right;
+        font: normal normal normal 16px/28px PFHandbookProRegular;
+        letter-spacing: 0px;
+        color: #5e5e5e;
+        opacity: 1;
+      }
+      h2 {
+        text-align: right;
+        font: normal normal bold 14px/28px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+      }
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 58px;
+    }
+  }
+}
+
+//page-2
+.box3 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #fff;
+  border: 1px dashed #cdcece;
+  border-radius: 4px;
+  opacity: 1;
+  width: 450px;
+  height: 475px;
+  position: relative;
+  .line11 {
+    height: 45px;
+    background: #d4ae69 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+    h1 {
+      margin: 0px 0px 0px 23px;
+      text-align: left;
+      font: normal normal bold 19px/30px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+  .line12 {
+    padding: 4px 24px 0px 24px;
+    opacity: 1;
+    h1 {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      font: normal normal bold 17px/47px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #6c7174;
+      opacity: 1;
+    }
+  }
+  .lineb {
+    padding: 8px 24px 2px 24px;
+    position: absolute;
+    bottom: 0;
+  }
+  div {
+    h1 {
+      margin-top: 1vh;
+      margin-bottom: -1vh;
+      text-align: right;
+      font: normal normal normal 16px/28px PFHandbookProRegular;
+      letter-spacing: 0px;
+      color: #5e5e5e;
+      opacity: 1;
+    }
+    h2 {
+      text-align: right;
+      font: normal normal bold 14px/28px PFHandbookProBold;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+  }
+}
+.bar {
+  margin-top: 29px;
+  width: 920px;
+  height: 76px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #fff;
+  border: 1px dashed #c3c3c3;
+  border-radius: 4px;
+  opacity: 1;
+
+  .left {
+    padding: 0px 0px 0px 22px;
+    img {
+      width: 38px;
+      height: 38px;
+      margin: 0px 32px 0px 0px;
+    }
+    h1 {
+      text-align: center;
+      font: normal normal normal 29px/28px PFHandbookProRegular;
+      letter-spacing: 0px;
+      color: #5e5e5e;
+      opacity: 1;
+    }
+  }
+  .right {
+    margin: 0px 32px 0px 0px;
+    .dotted {
+      width: 0px;
+      height: 39px;
+      border: 1px dashed #c1c1c1;
+      opacity: 1;
+      margin: 0px 48px;
+    }
+    .texts {
+      h1 {
+        text-align: left;
+        font: normal normal normal 14px/21px PFHandbookProRegular;
+        letter-spacing: 0px;
+        color: #6c7174;
+        opacity: 1;
+      }
+      h2 {
+        text-align: left;
+        font: normal normal bold 21px/26px PFHandbookProBold;
+        letter-spacing: 0px;
+        color: #902065;
+        opacity: 1;
+      }
+    }
+  }
+}
+.matter {
+  padding: 51px 0px 0px 54px;
+
+  h1 {
+    align-self: flex-start;
+    text-align: left;
+    font: normal normal normal 21px/30px PFHandbookProRegular;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  p {
+    text-align: left;
+    font: normal normal normal 17px/23px PFHandbookProRegular;
+    letter-spacing: 0px;
+    color: #6c7174;
+    opacity: 1;
+  }
+}
+
+.contain {
+  width: 100%;
+  padding: 43px 49px;
+  .image {
+    width: 100%;
+    height: 557px;
+    background: transparent url("../assets/images/Screenshot (2).png") 0% 0%
+      no-repeat padding-box;
+    opacity: 1;
+  }
+}
+.contains {
+  width: 100%;
+  padding: 5px;
+  .images {
+    width: 100%;
+    height: 220vh;
+    background: transparent url("../assets/images/sap.png") 0% 0% no-repeat
+      padding-box;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 1;
+  }
+}
